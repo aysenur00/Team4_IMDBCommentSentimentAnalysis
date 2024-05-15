@@ -28,6 +28,7 @@ def init_dataset():
             return 0
         
     df['sentiment']  =  df['sentiment'].apply(convert_target)
+    print(df.value_counts)
     X_train, X_test, Y_train, Y_test=train_test_split(df["review"],df["sentiment"],stratify=df["sentiment"])
     return X_train, X_test, Y_train, Y_test
 
