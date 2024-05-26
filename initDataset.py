@@ -1,7 +1,6 @@
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt
-import torch
 import tensorflow as tf
 import tensorflow_hub as tf_hub
 import tensorflow_text as tf_text
